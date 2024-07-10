@@ -23,6 +23,41 @@ public class List {
             tail = object; // En sonunda ise tail'i objeye eşitliyoruz.
         }
     }
+    void addBetween(int index, int data) {
+        Node object = new Node(data);
+        if (head == null) {
+            head = object;
+            tail = object;
+        } else if(head != null && index == 0) {
+            object.next = head;
+            head.prev = object;
+            head = object;
+        }else {
+            int n = 0;
+            Node temp = head;
+            while (temp != null) {
+                temp = temp.next;
+                n++;
+            }
+            temp = head;
+            if (index > n) {
+                tail.next = object;
+                object.prev = tail;
+                tail = object;
+            } else {
+                int i = 0;
+                while (i != index) {
+                    temp = temp.next;
+                    i++;
+                }
+                object.prev = temp.prev;
+                temp.prev.next = object; //Önemli bir yer
+                object.next = temp;
+                temp.prev = object;
+                
+            }
+        }
+    }
     void listingHead() { // Baştan sonra kadar listeler
         Node temp = head;
         System.out.print("head -> ");
