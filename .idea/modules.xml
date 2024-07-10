@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BagliListeAradanSilme-LinkedList/BagliListeAradanSilme-LinkedList.iml" filepath="$PROJECT_DIR$/BagliListeAradanSilme-LinkedList/BagliListeAradanSilme-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BagliListeArayaEkleme-LinkedList/BagliListeArayaEkleme-LinkedList.iml" filepath="$PROJECT_DIR$/BagliListeArayaEkleme-LinkedList/BagliListeArayaEkleme-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BagliListeBasaSonaEkleme-LinkedList/BagliListeBasaSonaEkleme-LinkedList.iml" filepath="$PROJECT_DIR$/BagliListeBasaSonaEkleme-LinkedList/BagliListeBasaSonaEkleme-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BagliListeBastanSondanSilme-LinkedList/BagliListeBastanSondanSilme-LinkedList.iml" filepath="$PROJECT_DIR$/BagliListeBastanSondanSilme-LinkedList/BagliListeBastanSondanSilme-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BagliListeYapisiniOlusturma-LinkedList/BagliListeYapisiniOlusturma-LinkedList.iml" filepath="$PROJECT_DIR$/BagliListeYapisiniOlusturma-LinkedList/BagliListeYapisiniOlusturma-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DugumOlusturma/DugumOlusturma.iml" filepath="$PROJECT_DIR$/DugumOlusturma/DugumOlusturma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OgrenciKayitUygulamasi-LinkedList/OgrenciKayitUygulamasi-LinkedList.iml" filepath="$PROJECT_DIR$/OgrenciKayitUygulamasi-LinkedList/OgrenciKayitUygulamasi-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Veri Yapıları - Data structures.iml" filepath="$PROJECT_DIR$/.idea/Veri Yapıları - Data structures.iml" />
+    </modules>
+  </component>
+</project>
