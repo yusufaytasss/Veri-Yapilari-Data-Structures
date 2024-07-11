@@ -80,6 +80,36 @@ public class List {
             }
         }
     }
+    void deleteBetween(int index) {
+        if (head != null) {
+            if (head.next == null && index == 0) { // Listede tek bir eleman varsa ve indis numarası da 0 olarak verildiyse o elemanı siler.
+                head = null;
+                tail = null;
+            } else if (head.next != null && index <= 0) { // Listenin başındaki elemanı silip arkasındaki elemanı listenin başına getiriyoruz
+                head = head.next;
+                head.prev = null;
+            } else {
+                int n = 0;
+                Node temp = head;
+                while (temp != null) {
+                    n++;
+                    temp = temp.next;
+                } if (index >= n - 1) { // Tail silinmek istenirse n'in tuttuğu liste uzunluğu ile silme işlemi gerçekleştiriyoruz.
+                    tail = tail.prev;
+                    tail.next = null;
+                } else {
+                    temp = head;
+                    int i = 0;
+                    while (i < index) {
+                        i++;
+                        temp = temp.next;
+                    }
+                    temp.next.prev = temp.prev; // Çift yönlüde silme işleminin en önemli noktası. 
+                    temp.prev.next = temp.next;
+                }
+            }
+        }
+    }
     void listingHead() { // Baştan sonra kadar listeler
         Node temp = head;
         System.out.print("head -> ");
