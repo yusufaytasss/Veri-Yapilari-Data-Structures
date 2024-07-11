@@ -58,6 +58,28 @@ public class List {
             }
         }
     }
+    void deleteHead(){
+        if (head != null) { // Listede eleman varsa;
+            if (head.next == null) { // Listede tek bir eleman varsa koşulu;
+                head = null;
+                tail = null;
+            } else { // Listenin başındaki elemanı silme;
+                head = head.next;
+                head.prev = null;
+            }
+        }
+    }
+    void deleteTail() {
+        if (head != null) {
+            if (head.next == null) { // Listedeki tek bir elemanı silme işlemi 'deleteTail' için de geçerli.
+                head = null;
+                tail = null;
+            } else { // Listenin sonundaki elemanı silme;
+                tail = tail.prev;
+                tail.next = null;
+            }
+        }
+    }
     void listingHead() { // Baştan sonra kadar listeler
         Node temp = head;
         System.out.print("head -> ");
